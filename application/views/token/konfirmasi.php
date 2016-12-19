@@ -23,7 +23,7 @@
                     <div class="row">
                         <div class="col-md-3 header">Kode Pembelian
                         </div>
-                        <div class="col-md-3">PLN - <?php echo $this->session->userdata('nomor')?>
+                        <div class="col-md-3">PLN - <?php echo $this->session->userdata('nominal')?>
                         </div>
                     </div>
                 </div>

@@ -16,7 +16,7 @@
             <div id="welcome-msg" class="text-center"> Administrator</div>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <form action="admin/login" method="POST">
+                    <form action="<?php echo base_url()?>admin/login" method="POST">
                         <div class="form-group">
                             <input type="text" name="username" class="form-control" placeholder="Username">
                         </div>

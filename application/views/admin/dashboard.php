@@ -16,20 +16,21 @@
             <div id="welcome-msg" class="text-center"> Dashboard</div>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <form action="admin/login" method="POST">
-                        <div class="form-group">
-                            <input type="text" name="username" class="form-control" placeholder="Username">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" name="password" class="form-control" placeholder="Password">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Login</button>
-                    </form>
-                    <?php if($this->session->flashdata("message")) {?>
-                    <div class="alert alert-success" role="alert" style="margin-top:20px">
-                        <strong>Gagal!</strong> <?php echo $this->session->flashdata("message")?>
-                    </div>
-                    <?php } ?>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th><center>ID Pembayaran</center></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach($pembayaran as $post){?>
+                        <tr>
+                            <td><?php echo $post->id;?></a></td>
+                            <td><a class="btn btn-primary"  href="<?php echo base_url()?>admin/struk/<?php echo $post->id?>" >Verifikasi</a></td>
+                        </tr>     
+                        <?php }?>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

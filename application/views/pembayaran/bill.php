@@ -14,8 +14,8 @@
     <div class="col-md-8 col-md-offset-2">
         <div class="col-md-12 box" id="konfirmasi-pulsa">
             <div class="row">
-                <h2>Konfirmasi Pemesanan</h2>
-                <p>Cek kembali pesanan anda</p>     
+                <h2>Terima Kasih Telah Membeli</h2>
+                <p>Silahkan Lakukan Pembayaran di Kasir</p>     
                 <hr>
                 <div class="col-md-12">
                     <div class="row">

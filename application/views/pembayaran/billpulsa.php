@@ -11,33 +11,41 @@
 
     <?php echo $navbar ?>
 
-    <div class="col-md-8 col-md-offset-2">
+    <div class="col-md-6 col-md-offset-3">
         <div class="col-md-12 box" id="konfirmasi-pulsa">
             <div class="row">
-                <h2>Konfirmasi Pemesanan</h2>
-                <p>Cek kembali pesanan anda</p>     
+                <h2>Terima Kasih Telah Membeli</h2>
+                <p>Silahkan Lakukan Pembayaran di Kasir</p>     
                 <hr>
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-3 header">No Hp
+                        <div class="col-md-6 header">Nomor Pembayaran
                         </div>
-                        <div class="col-md-3"><?php echo $this->session->userdata('nomor')?>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-3 header">Operator
-                        </div>
-                        <div class="col-md-3"><?php echo $this->session->userdata('operator')?>
+                        <div class="col-md-6"><?php echo $id?>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-3 header">Nominal
+                        <div class="col-md-6 header">No Hp
                         </div>
-                        <div class="col-md-3">Rp <?php echo $this->session->userdata('nominal')?>,-
+                        <div class="col-md-6"><?php echo $this->session->userdata('nomor')?>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6 header">Operator
+                        </div>
+                        <div class="col-md-6"><?php echo $this->session->userdata('operator')?>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6 header">Nominal
+                        </div>
+                        <div class="col-md-6">Rp <?php echo $this->session->userdata('nominal')?>,-
                         </div>
                     </div>
                 </div>
@@ -48,9 +56,6 @@
                                 <div class="col-md-12 header">Total Bayar
                                 </div>
                                 <div class="col-md-12">Rp <?php echo $this->session->userdata('jumlah_bayar')?>,-
-                                </div>
-                                <div class="col-md-12 text-center" style="margin-top:20px;">
-                                    <a href="<?php echo base_url()?>pulsa/pembayaran"><button type="submit" class="btn btn-primary btn-lg text-center">Next</button></a>
                                 </div>
                             </div>
                         </div>

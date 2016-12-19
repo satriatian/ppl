@@ -6,6 +6,8 @@ class Pulsa extends CI_Controller {
 	function __construct() {
         parent::__construct();
         $this->load->library('session');
+        $this->load->model('TransaksiModels');
+        $this->load->model('PulsaModels');
     }
 
 	public function index(){
@@ -107,4 +109,13 @@ class Pulsa extends CI_Controller {
 
 	}
 
+	public function pembayaran(){
+		$pulsa = 1;
+		print_r($this->session->userdata());
+		$transaksi = $this->TransaksiModels->insertTransaksi(1);
+		$pulsa = $this->PulsaModels->insert($transaksi,$this->session->userdata());
+		#echo $transaksi;
+
+		redirect('pembayaran?type=pulsa&id='.$transaksi);
+	}
 }

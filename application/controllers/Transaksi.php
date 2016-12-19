@@ -5,10 +5,10 @@ class Transaksi extends CI_Controller {
 
 	public function showMenuTransaksi($transaksi)
 	{
-		if($transaksi='pulsa'){
+		if($transaksi=='pulsa'){
 			redirect ('pulsa');
 		}
-		else if($transaksi='token'){
+		else if($transaksi=='token'){
 			redirect ('token');
 		}
 	}

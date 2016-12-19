@@ -25,5 +25,8 @@ class Pembayaran extends CI_Controller {
 		{
 			$this->load->view('pembayaran/billpulsa',$data);
 		}
+		else if ( $type=='token') {
+			$this->load->view('pembayaran/billtoken',$data);
+		}
 	}
 }

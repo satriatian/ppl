@@ -1,0 +1,84 @@
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 100px;
+    height: 100px;
+    padding-top: 0;
+}
+
+body
+{
+	width: 100%;
+  	height: 600px;
+  	background-image: url('../img/bg4.jpg');
+ 	background-repeat: no-repeat;
+ 	background-size: 100%; 
+  	font-family: 'Roboto', sans-serif;
+}
+
+#welcome-msg{
+	font-size: 50px;
+	font-family: 'Lobster', cursive;
+	margin-bottom: 50px;
+}
+
+.navbar{
+	background: transparent;
+	border:none;
+}
+
+.indomaret-label{
+	background-color:#000080;
+	width: 100%;
+	text-align: center;
+	color:white;
+	padding-top: 5px;
+	padding-bottom:5px;
+	margin-bottom: 20px;
+}
+
+.btn-primary{
+	background-color: #ffff00;
+	border:solid 2px white;
+	color:black;
+	font-weight: bold;
+}
+
+.btn-primary:hover{
+	background-color: #e5e500;
+	border:solid 2px white;
+	color:black;
+	font-weight: bold;
+}
+
+.nominal-box
+{
+	padding:20px 5px;
+	background: #ffff00;
+	color:black;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.nominal-jumlah{
+	margin-top: 10px;
+	background:white;
+}
+
+.konfirmasi-pulsa{
+	width:100%;
+}
+
+.konfirmasi-pulsa>tbody>tr>th{
+	width:10%;
+}
+
+.konfirmasi-pulsa>tbody>tr>td{
+	width:50%;
+}
+
+#konfirmasi-pulsa
+{
+	font-size:20px;
+	text-transform: uppercase;
+}

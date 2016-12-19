@@ -14,7 +14,7 @@ class Token extends CI_Controller {
 		$data['header']=$this->load->view('parts/header','',true);
 		$data['navbar']=$this->load->view('parts/navbar','',true);
 		$data['footer']=$this->load->view('parts/footer','',true);
-		$this->load->view('token/token',$data);
+		$this->load->view('token/nominal',$data);
 	}
 
 	public function nominal()

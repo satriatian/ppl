@@ -21,9 +21,9 @@
                 <hr>
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-3 header">No Meter / ID PLN
+                        <div class="col-md-3 header">Kode Pembelian
                         </div>
-                        <div class="col-md-3"><?php echo $this->session->userdata('nomor')?>
+                        <div class="col-md-3">PLN - <?php echo $this->session->userdata('nomor')?>
                         </div>
                     </div>
                 </div>

@@ -13,7 +13,7 @@
 
     <div id="wrapper">
         <div class="col-md-8 col-md-offset-2">
-            <div id="welcome-msg" class="text-center"> i-Pulsa</div>
+            <div id="welcome-msg" class="text-center"> i-Token</div>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <form action="token/konfirmasi" method="GET">

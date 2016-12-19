@@ -27,14 +27,6 @@
                 </div>
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-md-6 header">No Meter / ID PLN
-                        </div>
-                        <div class="col-md-6"><?php echo $this->session->userdata('nomor')?>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="row">
                         <div class="col-md-6 header">Nominal
                         </div>
                         <div class="col-md-6">Rp <?php echo $this->session->userdata('nominal')?>,-
